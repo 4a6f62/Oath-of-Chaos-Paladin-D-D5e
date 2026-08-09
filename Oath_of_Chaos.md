@@ -30,7 +30,7 @@ You gain oath spells at the paladin levels listed.
 
 When you take this oath at 3rd level, you gain the following two Channel Divinity options.
 
-* **Unshackle Loyalty.** As an action, you shatter the rigid allegiance of a creature you can see within 30 feet of you. The target must succeed on a Wisdom saving throw against your spell save DC. On a failed save, the creature treats you and your companions as allies for 24 hours. If its former allies attack it during this time, it immediately becomes hostile toward them. Once the duration ends, the creature regains total independence and decides its own friends and foes based on how it was treated.
+* **Unshackle Loyalty.** As an action, you shatter the rigid allegiance of a creature you can see within 30 feet of you whose Challenge Rating is equal to or less than your Paladin level. The target must succeed on a Wisdom saving throw against your spell save DC. On a failed save, the creature treats you and your companions as allies for 24 hours. If its former allies attack it during this time, it immediately becomes hostile toward them. Once the duration ends, the creature regains total independence and decides its own friends and foes based on how it was treated.
 
 * **Chaotic Swap.** As an action, you force two creatures (Medium or Small) within 30 feet of you to swap places. You can choose yourself as one of these targets. Unwilling targets must succeed on a Charisma saving throw against your spell save DC to resist the swap.
   
