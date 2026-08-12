@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sacred Oath: Oath of Chaos</title>
+    <!-- Import D&D-style web fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Roboto:wght@400;700&family=Spectral:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <style>
         /* CSS Reset & Base Variables */
         *, *::before, *::after {
@@ -13,20 +17,25 @@
         }
 
         body {
-            font-family: Georgia, serif;
-            line-height: 1.5;
-            color: #2b2b2b;
-            background-color: #eee9e0;
+            font-family: 'Spectral', Georgia, serif;
+            font-size: 14px;
+            line-height: 1.45;
+            color: #222222;
+            background-color: #d0c8b6;
             padding: 0;
         }
 
         h1 {
-            color: #7a1c1c;
-            font-size: 2rem;
-            border-bottom: 2px solid #7a1c1c;
-            padding-bottom: 0.3rem;
+            font-family: 'Cinzel', Georgia, serif;
+            color: #58180D;
+            font-size: 2.1rem;
+            font-weight: 800;
+            border-bottom: 2px solid #c9ad6a;
+            padding-bottom: 0.2rem;
             margin-bottom: 0.8rem;
             column-span: all;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
         /* Full-width introductory paragraph spanning both columns */
@@ -39,25 +48,27 @@
 
         /* Styled Drop Cap for the first letter */
         .drop-cap::first-letter {
-            font-family: 'Times New Roman', Times, serif;
+            font-family: 'Cinzel', Georgia, serif;
             float: left;
-            font-size: 3.4rem;
-            line-height: 0.8;
+            font-size: 3.5rem;
+            line-height: 0.75;
             padding-top: 4px;
-            padding-right: 8px;
-            padding-left: 2px;
-            color: #7a1c1c;
-            font-weight: bold;
+            padding-right: 6px;
+            color: #58180D;
+            font-weight: 800;
         }
 
-        /* Heading styling - zero top-margin ensures perfectly aligned tops in grid columns */
+        /* Heading styling */
         h2 {
-            color: #7a1c1c;
+            font-family: 'Cinzel', Georgia, serif;
+            color: #58180D;
             font-size: 1.25rem;
+            font-weight: 700;
             margin-top: 0 !important;
             margin-bottom: 0.4rem;
-            border-bottom: 1px solid #c9b097;
+            border-bottom: 1px solid #c9ad6a;
             break-after: avoid;
+            letter-spacing: 0.5px;
         }
 
         p {
@@ -75,14 +86,6 @@
             margin-bottom: 0.4rem;
         }
 
-        img {
-            display: block;
-            max-width: 100%;
-            height: auto;
-            margin: 0 auto;
-            border-radius: 4px;
-        }
-
         /* Spans entire width across desktop pages */
         .full-width-section {
             column-span: all;
@@ -91,7 +94,7 @@
             margin-bottom: 1.2rem;
         }
 
-        /* Robust 2-Column Grid for side-by-side elements */
+        /* 2-Column Grid for side-by-side elements */
         .side-by-side-grid {
             column-span: all;
             display: grid;
@@ -100,6 +103,23 @@
             margin-top: 1.2rem;
             margin-bottom: 1.2rem;
             break-inside: avoid;
+        }
+
+        /* Image Wrapper for Page 1 Alignment */
+        .feature-image-wrapper {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .feature-image-wrapper img {
+            display: block;
+            max-height: 100%;
+            object-fit: contain;
+            object-position: bottom center;
+            border-radius: 4px;
         }
 
         /* Mobile-Safe Tables */
@@ -113,19 +133,28 @@
         table {
             width: 100%;
             border-collapse: collapse;
-            font-size: 0.88rem;
+            font-family: 'Roboto', sans-serif;
+            font-size: 0.85rem;
             min-width: 320px;
         }
 
         th, td {
-            padding: 0.4rem 0.6rem;
+            padding: 0.35rem 0.5rem;
             text-align: left;
-            border-bottom: 1px solid #d3c7b8;
+            border-bottom: 1px solid #e0d0b0;
         }
 
         th {
-            background-color: #e6dfd3;
-            color: #7a1c1c;
+            background-color: #e2d2b0;
+            color: #58180D;
+            font-family: 'Cinzel', serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-bottom: 2px solid #58180D;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: rgba(0, 0, 0, 0.03);
         }
 
         /* Page Footer Structure */
@@ -134,27 +163,25 @@
             justify-content: space-between;
             margin-top: 1.5rem;
             padding-top: 0.4rem;
-            border-top: 1px solid #7a1c1c;
-            font-size: 0.8rem;
+            border-top: 1px solid #c9ad6a;
+            font-family: 'Roboto', sans-serif;
+            font-size: 0.75rem;
             color: #666;
             text-transform: uppercase;
+            letter-spacing: 1px;
             font-weight: bold;
         }
 
-        /* ==========================================
-           1. MOBILE LAYOUT (Default / Single Column)
-           ========================================== */
+        /* Mobile Layout */
         .page {
             width: 100%;
-            background: #fdfcf7;
+            background-color: #fdf1dc;
             padding: 1.2rem;
             margin-bottom: 1rem;
             border-bottom: 2px solid #ccc;
         }
 
-        /* ==========================================
-           2. DESKTOP / PRINT LAYOUT (2 Columns, 2 Pages)
-           ========================================== */
+        /* Desktop / Print Layout */
         @media (min-width: 900px) {
             body {
                 padding: 2rem 0;
@@ -165,7 +192,7 @@
                 min-height: 297mm;
                 margin: 0 auto 2rem auto;
                 padding: 1.5cm;
-                background: #fdfcf7;
+                background-color: #fdf1dc;
                 box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
                 border-bottom: none;
 
@@ -261,7 +288,7 @@
                     <li><strong>DM Impulse:</strong> The DM forces you to roll on the Table of Volatile Entropy immediately after you cast an Oath spell or use Divine Smite.</li>
                 </ul>
             </div>
-            <div>
+            <div class="feature-image-wrapper">
                 <img src="smiles_chaos_paladin.png" alt="Smiles - Oath of Chaos Paladin">
             </div>
         </div>
