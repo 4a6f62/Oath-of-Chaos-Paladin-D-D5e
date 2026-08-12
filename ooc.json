@@ -6,7 +6,9 @@
         "json": "OathOfChaos",
         "abbreviation": "OoC",
         "full": "Oath of Chaos Homebrew",
-        "authors": ["4a6f62"],
+        "authors": [
+          "4a6f62"
+        ],
         "version": "1.0.0",
         "url": "",
         "targetSchema": "1.0.0"
@@ -73,14 +75,35 @@
             {
               "type": "table",
               "caption": "Oath of Chaos Spells",
-              "colLabels": ["Paladin Level", "Spells"],
-              "colStyles": ["col-3 text-center", "col-9"],
+              "colLabels": [
+                "Paladin Level",
+                "Spells"
+              ],
+              "colStyles": [
+                "col-3 text-center",
+                "col-9"
+              ],
               "rows": [
-                ["3rd", "{@spell chaos bolt|XGE}, {@spell freedom of movement}"],
-                ["5th", "{@spell misty step}, {@spell shatter}"],
-                ["9th", "{@spell hypnotic pattern}, {@spell sleet storm}"],
-                ["13th", "{@spell dimension door}, {@spell polymorph}"],
-                ["17th", "{@spell passwall}, {@spell animate objects}"]
+                [
+                  "3rd",
+                  "{@spell chaos bolt|XGE}, {@spell freedom of movement}"
+                ],
+                [
+                  "5th",
+                  "{@spell misty step}, {@spell shatter}"
+                ],
+                [
+                  "9th",
+                  "{@spell hypnotic pattern}, {@spell sleet storm}"
+                ],
+                [
+                  "13th",
+                  "{@spell dimension door}, {@spell polymorph}"
+                ],
+                [
+                  "17th",
+                  "{@spell passwall}, {@spell animate objects}"
+                ]
               ]
             }
           ]
@@ -131,19 +154,43 @@
       "level": 3,
       "header": 2,
       "entries": [
-        "Whenever you use {@feature Divine Smite|Paladin|PHB} and roll a {@b 1} on any of your Divine Smite damage dice, the chaotic magic overflows. You immediately roll a {@dice d6} on the Table of Volatile Entropy.",
+        "Whenever you use Divine Smite and roll a {@b 1} on any of your Divine Smite damage dice, the chaotic magic overflows. You immediately roll a {@dice d6} on the Table of Volatile Entropy.",
         {
           "type": "table",
           "caption": "Table of Volatile Entropy",
-          "colLabels": ["d6", "Effect"],
-          "colStyles": ["col-2 text-center", "col-10"],
+          "colLabels": [
+            "d6",
+            "Effect"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
           "rows": [
-            ["1", "{@b Entropic Backlash.} Violent magic tears outward. You and the target both take {@damage 1d6} Necrotic damage equal to your Charisma modifier + half the Smite damage dealt."],
-            ["2", "{@b Gravity Collapse.} Space warps violently around the strike. All creatures within 10 feet of the target (including you) must succeed on a Strength saving throw or be pulled into an unoccupied space adjacent to the target and knocked {@condition prone}."],
-            ["3", "{@b Mind-Fraying Flash.} A blinding flash of eldritch light erupts. You and the target must succeed on a Constitution saving throw or be {@condition blinded} until the end of your next turn."],
-            ["4", "{@b Bleeding Rift.} The strike tears a temporary fissure to the Astral Plane. The target is heavily obscured by dimensional fog until the start of your next turn, but any creature that strikes it before then deals an extra {@damage 1d6} Force damage."],
-            ["5", "{@b Vampiric Rupture.} Black lightning arcs across the wound. The target takes maximum damage on your Smite dice, and you regain hit points equal to half the Smite damage dealt."],
-            ["6", "{@b Anarchic Surge.} The strike erupts in pure raw force. The target takes double Smite damage and is pushed 20 feet away. Additionally, you instantly regain your reaction if you have already used it this round."]
+            [
+              "1",
+              "{@b Entropic Backlash.} Violent magic tears outward. You and the target both take Necrotic damage equal to your Charisma modifier + half the Smite damage dealt."
+            ],
+            [
+              "2",
+              "{@b Gravity Collapse.} Space warps violently around the strike. All creatures within 10 feet of the target (including you) must succeed on a Strength saving throw or be pulled into an unoccupied space adjacent to the target and knocked {@condition prone}."
+            ],
+            [
+              "3",
+              "{@b Mind-Fraying Flash.} A blinding flash of eldritch light erupts. You and the target must succeed on a Constitution saving throw or be {@condition blinded} until the end of your next turn."
+            ],
+            [
+              "4",
+              "{@b Bleeding Rift.} The strike tears a temporary fissure to the Astral Plane. The target is heavily obscured by dimensional fog until the start of your next turn, but any creature that strikes it before then deals an extra {@damage 1d6} Force damage."
+            ],
+            [
+              "5",
+              "{@b Vampiric Rupture.} Black lightning arcs across the wound. The target takes maximum damage on your Smite dice, and you regain hit points equal to half the Smite damage dealt."
+            ],
+            [
+              "6",
+              "{@b Anarchic Surge.} The strike erupts in pure raw force. The target takes double Smite damage and is pushed 20 feet away. Additionally, you instantly regain your reaction if you have already used it this round."
+            ]
           ]
         }
       ]
