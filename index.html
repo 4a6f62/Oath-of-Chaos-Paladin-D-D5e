@@ -177,6 +177,21 @@
         page-break-after: always;
       }
     }
+
+    .wide-table-container td {
+  vertical-align: top;
+  padding: 6px 8px; /* Standardizes top/bottom spacing on every row */
+  line-height: 1.45; /* Prevents cramped text wrapping on tight screens */
+}
+
+    .wide-table-container {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.wide-table-container table {
+  min-width: 600px; /* Ensures text doesn't wrap into tiny vertical columns on mobile */
+}
   </style>
 </head>
 <body>
