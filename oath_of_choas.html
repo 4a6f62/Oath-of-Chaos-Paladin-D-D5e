@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sacred Oath: Oath of Chaos</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@700&display=swap');
+
+    @page {
+      size: letter;
+      margin: 0;
+    }
+
+    body {
+      background-color: #eee;
+      font-family: 'Libre Baskerville', Georgia, serif;
+      font-size: 13px;
+      line-height: 1.4;
+      color: #222;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .page {
+      background: #fdf1dc;
+      background-image: radial-gradient(#fff7e6 10%, transparent 11%);
+      background-size: 30px 30px;
+      width: 816px;
+      min-height: 1056px;
+      margin: 0 auto 20px auto;
+      padding: 40px;
+      box-sizing: border-box;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      position: relative;
+      border: 1px solid #c9ad7d;
+      page-break-after: always;
+    }
+
+    h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 28px;
+      color: #58170d;
+      border-bottom: 2px solid #c9ad7d;
+      margin-top: 0;
+      margin-bottom: 12px;
+      line-height: 1;
+    }
+
+    h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 18px;
+      color: #58170d;
+      border-bottom: 1px solid #58170d;
+      margin-top: 14px;
+      margin-bottom: 6px;
+    }
+
+    .col-right .feature-block:first-child h2 {
+      margin-top: 0;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 8px;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    /* Fancy Drop Cap on first paragraph */
+    .lead-p::first-letter {
+      font-family: 'Cinzel', serif;
+      font-size: 330%;
+      float: left;
+      line-height: 0.75;
+      padding-top: 4px;
+      padding-right: 6px;
+      padding-bottom: 2px;
+      color: #58170d;
+    }
+
+    ul {
+      margin-top: 0;
+      margin-bottom: 8px;
+      padding-left: 18px;
+    }
+
+    li {
+      margin-bottom: 4px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0;
+      font-size: 12px;
+    }
+
+    th {
+      font-family: 'Cinzel', serif;
+      background-color: #e0e5c1;
+      color: #58170d;
+      border-bottom: 1px solid #58170d;
+      padding: 4px 6px;
+      text-align: left;
+    }
+
+    td {
+      padding: 3px 6px;
+    }
+
+    tr:nth-child(even) {
+      background-color: rgba(0, 0, 0, 0.04);
+    }
+
+    .columns-container {
+      display: flex;
+      gap: 30px;
+    }
+
+    .col-left, .col-right {
+      width: 50%;
+    }
+
+    .wide-table-container {
+      margin-bottom: 20px;
+      background: #f2e5cb;
+      border: 1px solid #c9ad7d;
+      padding: 12px 16px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.05);
+    }
+
+    .wide-table-container h2 {
+      margin-top: 0;
+    }
+
+    .wide-table-container td {
+      vertical-align: top;
+    }
+
+    .feature-block {
+      margin-bottom: 12px;
+    }
+
+    /* Character Portrait Image */
+    .character-portrait {
+      width: 355px;
+      height: 700px;
+      object-fit: contain;
+      object-position: center;
+      margin-top: 10px;
+      border-radius: 4px;
+      filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2));
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 20px;
+      left: 40px;
+      right: 40px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 10px;
+      color: #7d6b4f;
+      font-family: 'Cinzel', serif;
+      border-top: 1px solid #c9ad7d;
+      padding-top: 4px;
+    }
+
+    @media print {
+      body {
+        background: none;
+        padding: 0;
+      }
+      .page {
+        box-shadow: none;
+        margin: 0;
+        page-break-after: always;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- PAGE 1 -->
+  <div class="page">
+    <h1>Sacred Oath: Oath of Chaos</h1>
+    
+    <div class="columns-container">
+      
+      <!-- LEFT COLUMN -->
+      <div class="col-left">
+        <p class="lead-p">Paladins who swear the Oath of Chaos act as active agents of wild probability, living catalysts of change, and untamable liberators. They view rigid systems, unyielding dogmas, and enforced order as stagnation, striving instead to force evolution through unpredictable action and absolute freedom.</p>
+
+        <h2>Tenets of Chaos</h2>
+        <ul>
+          <li><strong>Change is the Only Constant.</strong> Stagnation is death. Constantly force systems, ideas, and battles to evolve.</li>
+          <li><strong>Be the Butterfly.</strong> A single strike or small spark can overturn empires; embrace the unpredictable ripples of your actions.</li>
+          <li><strong>Break Every Cage.</strong> No prison, rigid dogma, or spell has the right to bind free will or restrict movement.</li>
+        </ul>
+
+        <h2>Oath Spells</h2>
+        <p>You gain oath spells at the paladin levels listed.</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 30%; text-align: center;">Paladin Level</th>
+              <th style="width: 70%;">Spells</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="text-align: center;">3rd</td>
+              <td><em>chaos bolt</em>, <em>expeditious retreat</em></td>
+            </tr>
+            <tr>
+              <td style="text-align: center;">5th</td>
+              <td><em>misty step</em>, <em>shatter</em></td>
+            </tr>
+            <tr>
+              <td style="text-align: center;">9th</td>
+              <td><em>hypnotic pattern</em>, <em>sleet storm</em></td>
+            </tr>
+            <tr>
+              <td style="text-align: center;">13th</td>
+              <td><em>dimension door</em>, <em>polymorph</em></td>
+            </tr>
+            <tr>
+              <td style="text-align: center;">17th</td>
+              <td><em>passwall</em>, <em>animate objects</em></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Channel Divinity</h2>
+        <p>When you take this oath at 3rd level, you gain the following two Channel Divinity options.</p>
+
+        <div class="feature-block">
+          <p><strong>Unshackle Loyalty.</strong> As an action, you shatter the rigid allegiance of a creature you can see within 30 feet of you whose Challenge Rating is equal to or less than half your Paladin level (rounded down). The target must succeed on a Wisdom saving throw against your spell save DC. On a failed save, the creature treats you and your companions as allies for 1 hour. If you or your companions deal damage to the target, it immediately makes a new Wisdom saving throw to end the effect. If its former allies attack it during this time, it immediately turns hostile toward them. When the duration ends, all allegiance bonds shatter completely; the creature gains total independence and freely decides its own actions, friends, and foes.</p>
+        </div>
+
+        <div class="feature-block">
+          <p><strong>Chaotic Swap.</strong> As an action, you force two creatures (Medium or Small) within 30 feet of you to swap places. You can choose yourself as one of these targets. Unwilling targets must succeed on a Charisma saving throw against your spell save DC to resist the swap.</p>
+          <ul>
+            <li><strong>The Chaos Twist:</strong> Roll a d4. On a 1, the magical tether snaps out of control. If swapping two other creatures, you misfire and swap places with one of the targets instead (DM's choice). If swapping yourself, the DM chooses which valid creature within 30 feet you swap places with instead.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="col-right">
+        <div class="feature-block">
+          <h2>Volatile Smite</h2>
+          <p>Starting at 3rd level, whenever you use Divine Smite and roll a 1 on any of your Divine Smite damage dice, the chaotic magic overflows. You immediately roll a d10 on the Table of Volatile Entropy.</p>
+        </div>
+
+        <div class="feature-block">
+          <h2>Entropy's Favor</h2>
+          <p>At 3rd level, you manipulate wild probability to gain advantage on one attack roll, ability check, or saving throw. Once you use this feature, you cannot use it again until you finish a short or long rest.</p>
+          <p>Before you regain the use of this feature, you recharge it immediately whenever one of the following occurs:</p>
+          <ul>
+            <li><strong>Natural Entropy:</strong> You trigger your Volatile Smite feature by rolling a 1 on a Divine Smite damage die.</li>
+            <li><strong>DM Impulse:</strong> The DM forces you to roll on the Table of Volatile Entropy immediately after you cast an Oath spell or use Divine Smite.</li>
+          </ul>
+        </div>
+
+        <img class="character-portrait" src="smiles_chaos_paladin.png" alt="Smiles - Oath of Chaos Paladin">
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <span>SACRED OATH | OATH OF CHAOS</span>
+      <span>PAGE 1</span>
+    </div>
+  </div>
+
+  <!-- PAGE 2 -->
+  <div class="page">
+    <div class="wide-table-container">
+      <h2>Table of Volatile Entropy</h2>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 6%; text-align: center;">d10</th>
+            <th style="width: 94%;">Effect</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align: center;"><strong>1</strong></td>
+            <td><strong>Entropic Backlash.</strong> Violent magic tears outward. You and the target both take Necrotic damage equal to your Charisma modifier + half the Smite damage dealt.</td>
+          </tr>
+          <tr>
+            <td style="text-align: center;"><strong>2</strong></td>
+            <td><strong>Gravity Collapse.</strong> Space warps violently around the strike. All creatures within 10 feet of the target (including you) must succeed on a Strength saving throw or be pulled into an unoccupied space adjacent to the target and knocked prone.</td>
+          </tr>
+          <tr>
+            <td style="text-align: center;"><strong>3</strong></td>
+            <td><strong>Mind-Fraying Flash.</strong> A blinding flash of eldritch light erupts. You and the target must succeed on a Constitution saving throw or be blinded until the end of your next turn.</td>
+          </tr>
+          <tr>
+            <td style="text-align: center;"><strong>4</strong></td>
+            <td><strong>Bleeding Rift.</strong> The strike tears a temporary fissure to the Astral Plane. The target is heavily obscured by dimensional fog until the start of your next turn, but any creature that strikes it before then deals an extra 1d6 Force damage.</td>
+          </tr>
+          <tr>
+            <td style="text-align: center;"><strong>5</strong></td>
+            <td><strong>Vampiric Rupture.</strong> Black lightning arcs across the wound. The target takes maximum damage on your Smite dice, and you regain hit points equal to half the Smite damage dealt.</td>
+          </tr>
+          <tr>
+            <td style="text-align: center;"><strong>6</strong></td>
+            <td><strong>Anarchic Surge.</strong> The strike erupts in pure raw force. The target takes double Smite damage and is pushed 20 feet away. Additionally, you instantly regain your reaction if you have already used it this round.</td>
+          </tr>
+          <tr>
+            <td style="text-align: center;"><strong>7</strong></td>
+            <td><strong>Improbability Shift.</strong> Reality briefly stumbles into absurdity. The target's weapon or spellcasting focus temporarily transforms into a potted plant or small brass towel until the end of its next turn, preventing weapon attacks or spells with material components.</td>
+          </tr>
+          <tr>
+            <td style="text-align: center;"><strong>8</strong></td>
+            <td><strong>Perspective Shock.</strong> The strike forces an overwhelming wave of objective cosmic perspective. The target must succeed on a Wisdom saving throw against your spell save DC or be frightened of you and incapacitated by existential dread until the start of your next turn.</td>
+          </tr>
+          <tr>
+            <td style="text-align: center;"><strong>9</strong></td>
+            <td><strong>Babel Scramble.</strong> Pure chaotic noise floods local telepathic channels. All hostile creatures within 15 feet take 1d6 Psychic damage and cannot speak, cast spells with verbal components, or communicate until the end of their next turn.</td>
+          </tr>
+          <tr>
+            <td style="text-align: center;"><strong>10</strong></td>
+            <td><strong>The Ultimate Answer.</strong> Probability converges on absolute certainty. You deal an extra 4 Force damage, and the next attack roll, saving throw, or ability check made by you or an ally within 30 feet within 1 minute automatically succeeds (or counts as a natural 20).</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="columns-container">
+      <div class="col-left">
+        <div class="feature-block">
+          <h2>Aura of Unbound Chaos</h2>
+          <p>Beginning at 7th level, order cannot exist anywhere near you. You project a 10-foot aura of wild freedom. You and friendly creatures within your aura cannot be restrained or grappled, and moving through difficult terrain costs no extra movement.</p>
+          <p>At 18th level, the range of this aura increases to 30 feet.</p>
+        </div>
+
+        <div class="feature-block">
+          <h2>Unfettered Shift</h2>
+          <p>Starting at 15th level, whenever an effect, spell, or creature attempts to reduce your movement speed, knock you prone, or move you against your will, you can use your reaction to completely negate it and instantly teleport up to 20 feet in any direction.</p>
+        </div>
+      </div>
+
+      <div class="col-right">
+        <div class="feature-block">
+          <h2 style="margin-top: 0;">Avatar of Pure Anarchy</h2>
+          <p>At 20th level, as an action, you transform into a living force of total liberation for 1 minute, gaining the following benefits:</p>
+          <ul>
+            <li>You are immune to all conditions except unconscious.</li>
+            <li>You gain a flying speed equal to your walking speed, moving through solid objects and creatures as if they were difficult terrain (taking 1d10 force damage if you end your turn inside an object).</li>
+            <li>Whenever you strike a creature with a weapon attack, you can choose to make the attack roll with disadvantage. If you land the hit despite the disadvantage, you instantly trigger an automatic 7, 8, 9, or 10 (your choice) on the Table of Volatile Entropy.</li>
+          </ul>
+          <p>Once you use this feature, you can’t use it again until you finish a long rest.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <span>SACRED OATH | OATH OF CHAOS</span>
+      <span>PAGE 2</span>
+    </div>
+  </div>
+
+</body>
+</html>
