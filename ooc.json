@@ -1,264 +1,264 @@
 {
-  "$schema": "https://raw.githubusercontent.com/5etools-mirror-3/5etools-img/main/homebrew/homebrew.schema.json",
-  "_meta": {
-    "sources": [
-      {
-        "json": "OathOfChaos",
-        "abbreviation": "OoC",
-        "full": "Oath of Chaos Homebrew",
-        "authors": [
-          "4a6f62"
-        ],
-        "version": "1.0.0",
-        "url": "",
-        "targetSchema": "1.0.0"
-      }
-    ],
-    "dateAdded": 1723478400,
-    "dateLastModified": 1723478400
-  },
-  "subclass": [
-    {
-      "name": "Oath of Chaos",
-      "shortName": "Chaos",
-      "source": "OathOfChaos",
-      "className": "Paladin",
-      "classSource": "PHB",
-      "subclassSpells": [
-        "chaos bolt|XGE",
-        "freedom of movement",
-        "misty step",
-        "shatter",
-        "hypnotic pattern",
-        "sleet storm",
-        "dimension door",
-        "polymorph",
-        "passwall",
-        "animate objects"
-      ],
-      "subclassFeatures": [
-        "Oath of Chaos|Paladin|PHB|Chaos|OathOfChaos|3",
-        "Channel Divinity: Unshackle Loyalty|Paladin|PHB|Chaos|OathOfChaos|3",
-        "Channel Divinity: Chaotic Swap|Paladin|PHB|Chaos|OathOfChaos|3",
-        "Volatile Smite|Paladin|PHB|Chaos|OathOfChaos|3",
-        "Aura of Unbound Chaos|Paladin|PHB|Chaos|OathOfChaos|7",
-        "Unfettered Shift|Paladin|PHB|Chaos|OathOfChaos|15",
-        "Avatar of Pure Anarchy|Paladin|PHB|Chaos|OathOfChaos|20"
-      ]
-    }
-  ],
-  "subclassFeature": [
-    {
-      "name": "Oath of Chaos",
-      "source": "OathOfChaos",
-      "subclassSource": "OathOfChaos",
-      "subclassShortName": "Chaos",
-      "className": "Paladin",
-      "classSource": "PHB",
-      "level": 3,
-      "entries": [
-        "Paladins who swear the Oath of Chaos act as active agents of wild probability, living catalysts of change, and untamable liberators.",
-        {
-          "type": "entries",
-          "name": "Tenets of Chaos",
-          "entries": [
-            "{@b Change is the Only Constant.} Stagnation is death. Constantly force systems, ideas, and battles to evolve.",
-            "{@b Be the Butterfly.} A single strike or small spark can overturn empires; embrace the unpredictable ripples of your actions.",
-            "{@b Break Every Cage.} No prison, rigid dogma, or spell has the right to bind free will or restrict movement."
-          ]
-        },
-        {
-          "type": "entries",
-          "name": "Oath Spells",
-          "entries": [
-            "You gain oath spells at the paladin levels listed.",
-            {
-              "type": "table",
-              "caption": "Oath of Chaos Spells",
-              "colLabels": [
-                "Paladin Level",
-                "Spells"
-              ],
-              "colStyles": [
-                "col-3 text-center",
-                "col-9"
-              ],
-              "rows": [
-                [
-                  "3rd",
-                  "{@spell chaos bolt|XGE}, {@spell freedom of movement}"
-                ],
-                [
-                  "5th",
-                  "{@spell misty step}, {@spell shatter}"
-                ],
-                [
-                  "9th",
-                  "{@spell hypnotic pattern}, {@spell sleet storm}"
-                ],
-                [
-                  "13th",
-                  "{@spell dimension door}, {@spell polymorph}"
-                ],
-                [
-                  "17th",
-                  "{@spell passwall}, {@spell animate objects}"
-                ]
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Channel Divinity: Unshackle Loyalty",
-      "source": "OathOfChaos",
-      "subclassSource": "OathOfChaos",
-      "subclassShortName": "Chaos",
-      "className": "Paladin",
-      "classSource": "PHB",
-      "level": 3,
-      "header": 2,
-      "entries": [
-        "As an action, you shatter the rigid allegiance of a creature you can see within 30 feet of you whose Challenge Rating is equal to or less than half your Paladin level (rounded down). The target must succeed on a Wisdom saving throw against your spell save DC. On a failed save, the creature treats you and your companions as allies for 1 hour. If you or your companions deal damage to the target, it immediately makes a new Wisdom saving throw to end the effect. If its former allies attack it during this time, it immediately turns hostile toward them. When the duration ends, all allegiance bonds shatter completely; the creature gains total independence and freely decides its own actions, friends, and foes based on its alignment, self-preservation, and how it was treated."
-      ]
-    },
-    {
-      "name": "Channel Divinity: Chaotic Swap",
-      "source": "OathOfChaos",
-      "subclassSource": "OathOfChaos",
-      "subclassShortName": "Chaos",
-      "className": "Paladin",
-      "classSource": "PHB",
-      "level": 3,
-      "header": 2,
-      "entries": [
-        "As an action, you force two creatures (Medium or Small) within 30 feet of you to swap places. You can choose yourself as one of these targets. Unwilling targets must succeed on a Charisma saving throw against your spell save DC to resist the swap.",
-        "{@i The Chaos Twist:} Roll a {@dice d4}. On a {@b 1}, the magical tether snaps out of control:",
-        {
-          "type": "list",
-          "items": [
-            "{@b If swapping two other creatures:} You misfire and swap places with one of the targets instead (DM's choice).",
-            "{@b If swapping yourself with a target:} The swap fails to target your intended creature, and the DM chooses which valid creature within 30 feet you swap places with instead."
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Volatile Smite",
-      "source": "OathOfChaos",
-      "subclassSource": "OathOfChaos",
-      "subclassShortName": "Chaos",
-      "className": "Paladin",
-      "classSource": "PHB",
-      "level": 3,
-      "header": 2,
-      "entries": [
-        "Whenever you use Divine Smite and roll a {@b 1} on any of your Divine Smite damage dice, the chaotic magic overflows. You immediately roll a {@dice d6} on the Table of Volatile Entropy.",
-        {
-          "type": "table",
-          "caption": "Table of Volatile Entropy",
-          "colLabels": [
-            "d6",
-            "Effect"
-          ],
-          "colStyles": [
-            "col-2 text-center",
-            "col-10"
-          ],
-          "rows": [
-            [
-              "1",
-              "{@b Entropic Backlash.} Violent magic tears outward. You and the target both take Necrotic damage equal to your Charisma modifier + half the Smite damage dealt."
-            ],
-            [
-              "2",
-              "{@b Gravity Collapse.} Space warps violently around the strike. All creatures within 10 feet of the target (including you) must succeed on a Strength saving throw or be pulled into an unoccupied space adjacent to the target and knocked {@condition prone}."
-            ],
-            [
-              "3",
-              "{@b Mind-Fraying Flash.} A blinding flash of eldritch light erupts. You and the target must succeed on a Constitution saving throw or be {@condition blinded} until the end of your next turn."
-            ],
-            [
-              "4",
-              "{@b Bleeding Rift.} The strike tears a temporary fissure to the Astral Plane. The target is heavily obscured by dimensional fog until the start of your next turn, but any creature that strikes it before then deals an extra {@damage 1d6} Force damage."
-            ],
-            [
-              "5",
-              "{@b Vampiric Rupture.} Black lightning arcs across the wound. The target takes maximum damage on your Smite dice, and you regain hit points equal to half the Smite damage dealt."
-            ],
-            [
-              "6",
-              "{@b Anarchic Surge.} The strike erupts in pure raw force. The target takes double Smite damage and is pushed 20 feet away. Additionally, you instantly regain your reaction if you have already used it this round."
-            ]
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Aura of Unbound Chaos",
-      "source": "OathOfChaos",
-      "subclassSource": "OathOfChaos",
-      "subclassShortName": "Chaos",
-      "className": "Paladin",
-      "classSource": "PHB",
-      "level": 7,
-      "header": 2,
-      "entries": [
-        "Beginning at 7th level, order cannot exist anywhere near you. You project a 10-foot aura of wild freedom.",
-        {
-          "type": "list",
-          "items": [
-            "{@b No Chains Can Hold Us:} You and friendly creatures within your aura cannot be {@condition restrained} or {@condition grappled}, and moving through difficult terrain costs no extra movement.",
-            "{@b Risk the Odds (Opt-In for Allies):} When a friendly creature starts its turn in your aura, it can choose to tap into the volatile energy by rolling a {@dice d6}:"
-          ]
-        },
-        {
-          "type": "list",
-          "style": "list-hang-notitle",
-          "items": [
-            "{@b 1–2 (Dark Backlash):} Space distorts painfully. The ally takes Force damage equal to your Charisma modifier, but their melee attacks deal an extra {@damage 1d6} Necrotic damage until the start of their next turn.",
-            "{@b 3–4 (Unstable Shift):} The ally can immediately teleport 15 feet as a free action, but leaves behind a trail of smoke that lightly obscures their landing space.",
-            "{@b 5–6 (Absolute Momentum):} The ally gains +15 feet of movement speed and advantage on their next attack roll or saving throw made this turn."
-          ]
-        },
-        "At 18th level, the range of this aura increases to 30 feet."
-      ]
-    },
-    {
-      "name": "Unfettered Shift",
-      "source": "OathOfChaos",
-      "subclassSource": "OathOfChaos",
-      "subclassShortName": "Chaos",
-      "className": "Paladin",
-      "classSource": "PHB",
-      "level": 15,
-      "header": 2,
-      "entries": [
-        "Starting at 15th level, whenever an effect, spell, or creature attempts to reduce your movement speed, knock you {@condition prone}, or move you against your will, you can use your reaction to completely negate it and instantly teleport up to 20 feet in any direction."
-      ]
-    },
-    {
-      "name": "Avatar of Pure Anarchy",
-      "source": "OathOfChaos",
-      "subclassSource": "OathOfChaos",
-      "subclassShortName": "Chaos",
-      "className": "Paladin",
-      "classSource": "PHB",
-      "level": 20,
-      "header": 2,
-      "entries": [
-        "At 20th level, as an action, you transform into a living force of total liberation for 1 minute, gaining the following benefits:",
-        {
-          "type": "list",
-          "items": [
-            "You are immune to all conditions except {@condition unconscious}.",
-            "You gain a flying speed equal to your walking speed, moving through solid objects and creatures as if they were difficult terrain (taking {@damage 1d10} force damage if you end your turn inside an object).",
-            "Whenever you strike a creature with a weapon attack, you can choose to make the attack roll with disadvantage. If you land the hit despite the disadvantage, you instantly trigger an automatic 5 or 6 (your choice) on the Table of Volatile Entropy."
-          ]
-        },
-        "Once you use this feature, you can’t use it again until you finish a long rest."
-      ]
-    }
-  ]
+	"$schema": "https://raw.githubusercontent.com/5etools-mirror-3/5etools-img/main/homebrew/homebrew.schema.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "OathOfChaos",
+				"abbreviation": "OoC",
+				"full": "Oath of Chaos Homebrew",
+				"authors": [
+					"4a6f62"
+				],
+				"version": "1.0.0",
+				"url": "",
+				"targetSchema": "1.0.0"
+			}
+		],
+		"dateAdded": 1723478400,
+		"dateLastModified": 1723478400
+	},
+	"subclass": [
+		{
+			"name": "Oath of Chaos",
+			"shortName": "Chaos",
+			"source": "OathOfChaos",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassSpells": [
+				"chaos bolt|XGE",
+				"freedom of movement",
+				"misty step",
+				"shatter",
+				"hypnotic pattern",
+				"sleet storm",
+				"dimension door",
+				"polymorph",
+				"passwall",
+				"animate objects"
+			],
+			"subclassFeatures": [
+				"Oath of Chaos|Paladin|PHB|Chaos|OathOfChaos|3",
+				"Channel Divinity: Unshackle Loyalty|Paladin|PHB|Chaos|OathOfChaos|3",
+				"Channel Divinity: Chaotic Swap|Paladin|PHB|Chaos|OathOfChaos|3",
+				"Volatile Smite|Paladin|PHB|Chaos|OathOfChaos|3",
+				"Aura of Unbound Chaos|Paladin|PHB|Chaos|OathOfChaos|7",
+				"Unfettered Shift|Paladin|PHB|Chaos|OathOfChaos|15",
+				"Avatar of Pure Anarchy|Paladin|PHB|Chaos|OathOfChaos|20"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Oath of Chaos",
+			"source": "OathOfChaos",
+			"subclassSource": "OathOfChaos",
+			"subclassShortName": "Chaos",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"level": 3,
+			"entries": [
+				"Paladins who swear the Oath of Chaos act as active agents of wild probability, living catalysts of change, and untamable liberators.",
+				{
+					"type": "entries",
+					"name": "Tenets of Chaos",
+					"entries": [
+						"{@b Change is the Only Constant.} Stagnation is death. Constantly force systems, ideas, and battles to evolve.",
+						"{@b Be the Butterfly.} A single strike or small spark can overturn empires; embrace the unpredictable ripples of your actions.",
+						"{@b Break Every Cage.} No prison, rigid dogma, or spell has the right to bind free will or restrict movement."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Oath Spells",
+					"entries": [
+						"You gain oath spells at the paladin levels listed.",
+						{
+							"type": "table",
+							"caption": "Oath of Chaos Spells",
+							"colLabels": [
+								"Paladin Level",
+								"Spells"
+							],
+							"colStyles": [
+								"col-3 text-center",
+								"col-9"
+							],
+							"rows": [
+								[
+									"3rd",
+									"{@spell chaos bolt|XGE}, {@spell freedom of movement}"
+								],
+								[
+									"5th",
+									"{@spell misty step}, {@spell shatter}"
+								],
+								[
+									"9th",
+									"{@spell hypnotic pattern}, {@spell sleet storm}"
+								],
+								[
+									"13th",
+									"{@spell dimension door}, {@spell polymorph}"
+								],
+								[
+									"17th",
+									"{@spell passwall}, {@spell animate objects}"
+								]
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Channel Divinity: Unshackle Loyalty",
+			"source": "OathOfChaos",
+			"subclassSource": "OathOfChaos",
+			"subclassShortName": "Chaos",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"As an action, you shatter the rigid allegiance of a creature you can see within 30 feet of you whose Challenge Rating is equal to or less than half your Paladin level (rounded down). The target must succeed on a Wisdom saving throw against your spell save DC. On a failed save, the creature treats you and your companions as allies for 1 hour. If you or your companions deal damage to the target, it immediately makes a new Wisdom saving throw to end the effect. If its former allies attack it during this time, it immediately turns hostile toward them. When the duration ends, all allegiance bonds shatter completely; the creature gains total independence and freely decides its own actions, friends, and foes based on its alignment, self-preservation, and how it was treated."
+			]
+		},
+		{
+			"name": "Channel Divinity: Chaotic Swap",
+			"source": "OathOfChaos",
+			"subclassSource": "OathOfChaos",
+			"subclassShortName": "Chaos",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"As an action, you force two creatures (Medium or Small) within 30 feet of you to swap places. You can choose yourself as one of these targets. Unwilling targets must succeed on a Charisma saving throw against your spell save DC to resist the swap.",
+				"{@i The Chaos Twist:} Roll a {@dice d4}. On a {@b 1}, the magical tether snaps out of control:",
+				{
+					"type": "list",
+					"items": [
+						"{@b If swapping two other creatures:} You misfire and swap places with one of the targets instead (DM's choice).",
+						"{@b If swapping yourself with a target:} The swap fails to target your intended creature, and the DM chooses which valid creature within 30 feet you swap places with instead."
+					]
+				}
+			]
+		},
+		{
+			"name": "Volatile Smite",
+			"source": "OathOfChaos",
+			"subclassSource": "OathOfChaos",
+			"subclassShortName": "Chaos",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"Whenever you use Divine Smite and roll a {@b 1} on any of your Divine Smite damage dice, the chaotic magic overflows. You immediately roll a {@dice d6} on the Table of Volatile Entropy.",
+				{
+					"type": "table",
+					"caption": "Table of Volatile Entropy",
+					"colLabels": [
+						"d6",
+						"Effect"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"{@b Entropic Backlash.} Violent magic tears outward. You and the target both take Necrotic damage equal to your Charisma modifier + half the Smite damage dealt."
+						],
+						[
+							"2",
+							"{@b Gravity Collapse.} Space warps violently around the strike. All creatures within 10 feet of the target (including you) must succeed on a Strength saving throw or be pulled into an unoccupied space adjacent to the target and knocked {@condition prone}."
+						],
+						[
+							"3",
+							"{@b Mind-Fraying Flash.} A blinding flash of eldritch light erupts. You and the target must succeed on a Constitution saving throw or be {@condition blinded} until the end of your next turn."
+						],
+						[
+							"4",
+							"{@b Bleeding Rift.} The strike tears a temporary fissure to the Astral Plane. The target is heavily obscured by dimensional fog until the start of your next turn, but any creature that strikes it before then deals an extra {@damage 1d6} Force damage."
+						],
+						[
+							"5",
+							"{@b Vampiric Rupture.} Black lightning arcs across the wound. The target takes maximum damage on your Smite dice, and you regain hit points equal to half the Smite damage dealt."
+						],
+						[
+							"6",
+							"{@b Anarchic Surge.} The strike erupts in pure raw force. The target takes double Smite damage and is pushed 20 feet away. Additionally, you instantly regain your reaction if you have already used it this round."
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Aura of Unbound Chaos",
+			"source": "OathOfChaos",
+			"subclassSource": "OathOfChaos",
+			"subclassShortName": "Chaos",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"Beginning at 7th level, order cannot exist anywhere near you. You project a 10-foot aura of wild freedom.",
+				{
+					"type": "list",
+					"items": [
+						"{@b No Chains Can Hold Us:} You and friendly creatures within your aura cannot be {@condition restrained} or {@condition grappled}, and moving through difficult terrain costs no extra movement.",
+						"{@b Risk the Odds (Opt-In for Allies):} When a friendly creature starts its turn in your aura, it can choose to tap into the volatile energy by rolling a {@dice d6}:"
+					]
+				},
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						"{@b 1–2 (Dark Backlash):} Space distorts painfully. The ally takes Force damage equal to your Charisma modifier, but their melee attacks deal an extra {@damage 1d6} Necrotic damage until the start of their next turn.",
+						"{@b 3–4 (Unstable Shift):} The ally can immediately teleport 15 feet as a free action, but leaves behind a trail of smoke that lightly obscures their landing space.",
+						"{@b 5–6 (Absolute Momentum):} The ally gains +15 feet of movement speed and advantage on their next attack roll or saving throw made this turn."
+					]
+				},
+				"At 18th level, the range of this aura increases to 30 feet."
+			]
+		},
+		{
+			"name": "Unfettered Shift",
+			"source": "OathOfChaos",
+			"subclassSource": "OathOfChaos",
+			"subclassShortName": "Chaos",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"Starting at 15th level, whenever an effect, spell, or creature attempts to reduce your movement speed, knock you {@condition prone}, or move you against your will, you can use your reaction to completely negate it and instantly teleport up to 20 feet in any direction."
+			]
+		},
+		{
+			"name": "Avatar of Pure Anarchy",
+			"source": "OathOfChaos",
+			"subclassSource": "OathOfChaos",
+			"subclassShortName": "Chaos",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"At 20th level, as an action, you transform into a living force of total liberation for 1 minute, gaining the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You are immune to all conditions except {@condition unconscious}.",
+						"You gain a flying speed equal to your walking speed, moving through solid objects and creatures as if they were difficult terrain (taking {@damage 1d10} force damage if you end your turn inside an object).",
+						"Whenever you strike a creature with a weapon attack, you can choose to make the attack roll with disadvantage. If you land the hit despite the disadvantage, you instantly trigger an automatic 5 or 6 (your choice) on the Table of Volatile Entropy."
+					]
+				},
+				"Once you use this feature, you can’t use it again until you finish a long rest."
+			]
+		}
+	]
 }
