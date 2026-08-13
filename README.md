@@ -1,0 +1,131 @@
+# Sacred Oath: Oath of Chaos (D&D 5e Paladin Subclass)
+
+[![D&D 5e Compatible](https://img.shields.io/badge/D%26D_5e-Compatible-purple.svg)](https://dnd.wizards.com/)
+[![5etools Homebrew](https://img.shields.io/badge/5etools-JSON_Ready-blue.svg)](https://5e.tools/)
+
+> *"Change is the only constant. Stagnation is death."*
+
+The **Oath of Chaos** is a homebrew Paladin subclass for Dungeons & Dragons 5th Edition. Designed for players who love unpredictable utility, wild probability, and battlefield liberation, this oath transforms the Paladin into an untamable catalyst of change—where every Divine Smite carries the risk and thrill of volatile magic.
+
+---
+
+## 🌟 Subclass Features Overview
+
+* **Channel Divinity:**
+  * **Unshackle Loyalty:** Temporarily break a creature's hostile allegiance, forcing it into a state of total independence (*Indifferent*).
+  * **Chaotic Swap:** Instantly switch places with any creature on the field, with a slight chance of a wild tether misfire.
+* **Volatile Smite & Table of Volatile Entropy (d12):** Rolling a `1` on your initial Divine Smite damage die triggers a surge of unpredictable wild magic—ranging from Astral fissures and rubber chickens to gravitational collapses and cosmic answers.
+* **Entropy's Favor:** Harness probability to gain advantage on rolls, recharging dynamically whenever chaos erupts.
+* **Aura of Unbound Chaos:** Grant allies resistance to movement restriction, grapples, and difficult terrain.
+* **Unfettered Shift:** Use your reaction to negate forced movement or speed reduction and instantly blink across the battlefield.
+* **Avatar of Pure Anarchy:** Transform into a living force of liberation, phasing through walls, ignoring mind and movement conditions, and invoking chaos at will.
+
+---
+
+## 📄 Repository Structure
+
+* **`index.html`** — A standalone, beautifully formatted two-column web page styled after official D&D 5e sourcebooks. Ideal for reading, mobile reference, or printing to PDF.
+* **`index.json`** — Full **5etools**-compatible homebrew JSON schema. Import this file directly into your 5etools setup for native integration with character sheets and compendiums.
+* **`README.md`** — Markdown compendium and documentation.
+
+---
+
+## 🛠️ How to Use with 5etools
+
+1. Download or copy the raw contents of [`index.json`](./index.json).
+2. Open **5etools**.
+3. Navigate to **Homebrew Manager** $\rightarrow$ **Import Custom Homebrew**.
+4. Paste the JSON data or upload the file.
+5. Select **Oath of Chaos** when creating or leveling up a Paladin!
+
+---
+
+## 📜 Complete Ruleset (Markdown Summary)
+
+### Tenets of Chaos
+* **Change is the Only Constant.** Stagnation is death. Constantly force systems, ideas, and battles to evolve.
+* **Be the Butterfly.** A single strike or small spark can overturn empires; embrace the unpredictable ripples of your actions.
+* **Break Every Cage.** No prison, rigid dogma, or spell has the right to bind free will or restrict movement.
+
+### Oath Spells
+| Paladin Level | Spells |
+| :--- | :--- |
+| **3rd** | *chaos bolt*, *expeditious retreat* |
+| **5th** | *misty step*, *shatter* |
+| **9th** | *hypnotic pattern*, *sleet storm* |
+| **13th** | *dimension door*, *polymorph* |
+| **17th** | *passwall*, *animate objects* |
+
+---
+
+### Channel Divinity
+When you take this oath at 3rd level, you gain the following two Channel Divinity options:
+
+* **Unshackle Loyalty.** As an action, you shatter the rigid allegiance of a creature you can see within 30 feet of you whose Challenge Rating is equal to or less than half your Paladin level (rounded down). The target must succeed on a Wisdom saving throw against your spell save DC. On a failed save, the creature becomes indifferent toward you and your companions for 1 hour and cannot willingly attack you or your companions while indifferent. The creature acts independently. If you or your companions deal damage to the target, it immediately makes a new Wisdom saving throw to end the effect. When the duration ends, the DM determines its attitude based on how it was treated.
+* **Chaotic Swap.** As an action, you force two creatures (Medium or Small) within 30 feet of you to swap places. A creature cannot be swapped into an occupied space. You can choose yourself as one of these targets. Unwilling targets must succeed on a Charisma saving throw against your spell save DC to resist the swap.
+  * *The Chaos Twist:* Roll a d4. On a **1**, the magical tether snaps out of control. If swapping two other creatures, you misfire and swap places with one of the targets instead (DM's choice). If swapping yourself, the DM chooses which valid creature within 30 feet you swap places with instead.
+
+---
+
+### Volatile Smite
+Starting at 3rd level, whenever you use *Divine Smite* and roll a **1** on the first Divine Smite damage die, the chaotic magic overflows. You immediately roll a **d12** on the **Table of Volatile Entropy**. You can trigger this feature only **once per turn**.
+
+#### Table of Volatile Entropy (d12)
+
+| d12 | Effect |
+| :---: | :--- |
+| **1** | **Entropic Backlash.** Violent magic tears outward. You and the target both take Necrotic damage equal to your Charisma modifier + half the Smite damage dealt (rounded down). |
+| **2** | **Gravity Collapse.** Space warps violently around the strike. All creatures of your choice within 10 feet of the target must succeed on a Strength saving throw or be pulled to an unoccupied space adjacent to the target and knocked prone. |
+| **3** | **Mind-Fraying Flash.** A blinding flash of eldritch light erupts. You and the target must succeed on a Constitution saving throw or be blinded until the end of your next turn. |
+| **4** | **Bleeding Rift.** The target is surrounded by dimensional fog until the start of your next turn. Attacks against the target do not suffer disadvantage from the fog, and the next successful attack against it deals an extra 1d6 Force damage. |
+| **5** | **Vampiric Rupture.** Black lightning arcs across the wound. The target takes maximum damage on your Smite dice, and you regain hit points equal to half the radiant damage dealt by the Divine Smite. |
+| **6** | **Anarchic Surge.** The strike erupts in pure raw force. The target takes double the radiant damage dealt by your Divine Smite and is pushed 20 feet away from you. |
+| **7** | **Improbability Shift.** Reality briefly stumbles into absurdity. The target's weapon or spellcasting focus temporarily transforms into a rubber chicken until the end of its next turn — purely cosmetic, no mechanical effect. |
+| **8** | **Perspective Shock.** The strike forces an overwhelming wave of objective cosmic perspective. The target must succeed on a Wisdom saving throw against your spell save DC or be frightened of you and incapacitated until the start of your next turn. |
+| **9** | **Babel Scramble.** Hostile creatures within 15 feet of the target take 1d6 Psychic damage and must succeed on a Constitution saving throw or be unable to speak or cast spells with verbal components until the end of their next turn. |
+| **10** | **The Ultimate Answer.** Probability converges on absolute certainty. You deal an extra 4 Force damage, and the next attack roll, saving throw, or ability check made by you or an ally within 30 feet within 1 minute gains a +10 bonus. |
+| **11** | **Gravity's Joke.** If you are airborne, you become a Large whale until the end of your next turn and immediately fall, taking fall damage normally. No effect if you are not airborne. |
+| **12** | **Static Fizzle.** Nothing happens. The magic just... fizzles. |
+
+---
+
+### Entropy's Favor
+At 3rd level, you manipulate wild probability to gain advantage on one attack roll, ability check, or saving throw. Once you use this feature, you cannot use it again until you finish a short or long rest.
+
+Before you regain the use of this feature, you recharge it immediately whenever one of the following occurs (max once per turn):
+* **Natural Entropy:** Immediately after you resolve a roll on the Table of Volatile Entropy triggered by Volatile Smite.
+* **DM Impulse:** The DM forces you to roll on the Table of Volatile Entropy immediately after you cast an Oath spell or use Divine Smite.
+
+---
+
+### Aura of Unbound Chaos
+Beginning at 7th level, you project a **10-foot aura** of wild freedom. You and friendly creatures within your aura have advantage on saving throws against being restrained, grappled, or effects that would reduce your speed, and difficult terrain costs you no extra movement.
+
+At 18th level, the range of this aura increases to 30 feet.
+
+---
+
+### Unfettered Shift
+Starting at 15th level, when an effect would cause you to be knocked prone, reduce your speed, or move you against your will, you can use your reaction to negate that effect and teleport up to 20 feet to an unoccupied space. This teleportation does not provoke opportunity attacks.
+
+---
+
+### Avatar of Pure Anarchy
+At 20th level, as an action, you transform into a living force of total liberation for 1 minute, gaining the following benefits:
+
+* You are immune to the charmed, frightened, grappled, paralyzed, restrained, and stunned conditions.
+* You gain a flying speed equal to your walking speed, moving through solid objects and creatures as if they were difficult terrain. If you end your turn inside an object, you take 1d10 force damage and are moved to the nearest unoccupied space.
+* Whenever you make a weapon attack, you can declare before rolling that you are making the attack with disadvantage. If the attack hits despite disadvantage, you immediately roll on the Table of Volatile Entropy.
+
+Once you use this feature, you can’t use it again until you finish a long rest.
+
+---
+
+## 🔄 Version Changelog (v1.2.0)
+
+* **Unshackle Loyalty:** Target becomes *Indifferent* rather than an automatic ally; preserves roleplay depth and DM narrative freedom.
+* **Table of Volatile Entropy Expanded (d12):** Rebalanced into a tight 4/4/4 risk-and-reward structure:
+  * Added Con save to *Babel Scramble* to balance anti-caster power.
+  * Replaced flat Natural 20 on *The Ultimate Answer* with a $+10$ bonus.
+  * Added *Gravity's Joke* (Large Sperm Whale transformation when airborne) and *Static Fizzle*.
+* **Avatar of Pure Anarchy:** Refined condition immunity to movement/mind-control effects (Charmed, Frightened, Grappled, Paralyzed, Restrained, Stunned).
