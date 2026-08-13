@@ -251,10 +251,11 @@
       "subclassSource": "OathOfChaos",
       "subclassShortName": "Chaos",
       "className": "Paladin",
+      "classSource": "PHB",
       "level": 7,
       "header": 2,
       "entries": [
-        "Beginning at 7th level, you project a 10-foot aura of wild freedom. You and friendly creatures within your aura have advantage on saving throws against being {@condition restrained}, {@condition grappled}, or effects that would reduce your speed, and difficult terrain costs you no extra movement.",
+        "Beginning at 7th level, you project a 10-foot aura of wild freedom. You and friendly creatures within your aura are immune to being {@condition grappled}, have advantage on saving throws against being {@condition restrained} or against effects that would reduce your speed, and difficult terrain costs you no extra movement.",
         "At 18th level, the range of this aura increases to 30 feet."
       ]
     },
