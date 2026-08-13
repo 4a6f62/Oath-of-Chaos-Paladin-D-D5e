@@ -75,7 +75,7 @@ Before you regain the use of this feature, you recharge it immediately whenever 
 
 ### Aura of Unbound Chaos
 
-Beginning at 7th level, you project a **10-foot aura** of wild freedom. You and friendly creatures within your aura have advantage on saving throws against being restrained, grappled, or effects that would reduce your speed, and difficult terrain costs you no extra movement.
+Beginning at 7th level, you project a **10-foot aura** of wild freedom. You and friendly creatures within your aura are immune to being restrained or grappled, have advantage on saving throws against being restrained or against effects that would reduce your speed, and difficult terrain costs you no extra movement.
 
 At 18th level, the range of this aura increases to 30 feet.
 
