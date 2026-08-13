@@ -9,7 +9,7 @@
         "authors": [
           "4a6f62"
         ],
-        "version": "1.0.0",
+        "version": "1.1.0",
         "url": "",
         "targetSchema": "1.0.0",
         "color": "4a6f62"
@@ -126,7 +126,7 @@
       "level": 3,
       "header": 2,
       "entries": [
-        "As an action, you shatter the rigid allegiance of a creature you can see within 30 feet of you whose Challenge Rating is equal to or less than half your Paladin level (rounded down). The target must succeed on a Wisdom saving throw against your spell save DC. On a failed save, the creature treats you and your companions as allies for 1 hour. If you or your companions deal damage to the target, it immediately makes a new Wisdom saving throw to end the effect. If its former allies attack it during this time, it immediately turns hostile toward them. When the duration ends, all allegiance bonds shatter completely; the creature gains total independence and freely decides its own actions, friends, and foes based on its alignment, self-preservation, and how it was treated."
+        "As an action, you shatter the rigid allegiance of a creature you can see within 30 feet of you whose Challenge Rating is equal to or less than half your Paladin level (rounded down). The target must succeed on a Wisdom saving throw against your spell save DC. On a failed save, the creature treats you and your companions as allies for 1 hour. If you or your companions deal damage to the target, it immediately makes a new Wisdom saving throw to end the effect. If its former allies attack it during this time, it immediately turns hostile toward them. When the duration ends, all allegiance bonds shatter completely; the creature gains total independence and freely decides its own actions, friends, and foes."
       ]
     },
     {
@@ -146,7 +146,7 @@
           "type": "list",
           "items": [
             "{@b If swapping two other creatures:} You misfire and swap places with one of the targets instead (DM's choice).",
-            "{@b If swapping yourself with a target:} The swap fails to target your intended creature, and the DM chooses which valid creature within 30 feet you swap places with instead."
+            "{@b If swapping yourself:} The DM chooses which valid creature within 30 feet you swap places with instead."
           ]
         }
       ]
@@ -162,12 +162,12 @@
       "level": 3,
       "header": 2,
       "entries": [
-        "Whenever you use Divine Smite and roll a {@b 1} on any of your Divine Smite damage dice, the chaotic magic overflows. You immediately roll a {@dice d10} on the Table of Volatile Entropy.",
+        "Starting at 3rd level, whenever you use Divine Smite and roll a {@b 1} on the first Divine Smite damage die, the chaotic magic overflows. You immediately roll a {@dice d12} on the Table of Volatile Entropy. You can trigger this feature only once per turn.",
         {
           "type": "table",
           "caption": "Table of Volatile Entropy",
           "colLabels": [
-            "d10",
+            "d12",
             "Effect"
           ],
           "colStyles": [
@@ -201,7 +201,7 @@
             ],
             [
               "7",
-              "{@b Improbability Shift.} Reality briefly stumbles into absurdity. The target's weapon or spellcasting focus temporarily transforms into a potted plant or small brass towel until the end of its next turn, preventing it from making weapon attacks or casting spells with material components."
+              "{@b Improbability Shift.} Reality briefly stumbles into absurdity. The target's weapon or spellcasting focus temporarily transforms into a rubber chicken until the end of its next turn — purely cosmetic, no mechanical effect."
             ],
             [
               "8",
@@ -214,6 +214,14 @@
             [
               "10",
               "{@b The Ultimate Answer.} Probability converges on absolute certainty. You deal an extra 4 Force damage, and the next attack roll, saving throw, or ability check made by you or an ally within 30 feet within 1 minute automatically succeeds (or counts as a natural 20)."
+            ],
+            [
+              "11",
+              "{@b Gravity's Joke.} If you are airborne, you become a Medium whale for 1 round and immediately fall, taking fall damage normally. No effect if you are not airborne."
+            ],
+            [
+              "12",
+              "{@b Static Fizzle.} Nothing happens. The magic just... fizzles."
             ]
           ]
         }
@@ -230,12 +238,12 @@
       "level": 3,
       "header": 2,
       "entries": [
-        "You manipulate wild probability to gain advantage on one attack roll, ability check, or saving throw. Once you use this feature, you cannot use it again until you finish a short or long rest.",
+        "At 3rd level, you manipulate wild probability to gain advantage on one attack roll, ability check, or saving throw. Once you use this feature, you cannot use it again until you finish a short or long rest.",
         "Before you regain the use of this feature, you recharge it immediately whenever one of the following occurs:",
         {
           "type": "list",
           "items": [
-            "{@b Natural Entropy:} You trigger your Volatile Smite feature by rolling a 1 on a Divine Smite damage die.",
+            "{@b Natural Entropy:} Immediately after you roll on the Table of Volatile Entropy triggered by Volatile Smite.",
             "{@b DM Impulse:} The DM forces you to roll on the Table of Volatile Entropy immediately after you cast an Oath spell or use Divine Smite."
           ]
         }
@@ -252,7 +260,7 @@
       "level": 7,
       "header": 2,
       "entries": [
-        "Beginning at 7th level, order cannot exist anywhere near you. You project a 10-foot aura of wild freedom. You and friendly creatures within your aura cannot be {@condition restrained} or {@condition grappled}, and moving through difficult terrain costs no extra movement.",
+        "Beginning at 7th level, you project a 10-foot aura of wild freedom. You and friendly creatures within your aura have advantage on saving throws against being {@condition restrained}, {@condition grappled}, or having your speed reduced, and difficult terrain costs you no extra movement.",
         "At 18th level, the range of this aura increases to 30 feet."
       ]
     },
@@ -287,7 +295,7 @@
           "items": [
             "You are immune to all conditions except {@condition unconscious}.",
             "You gain a flying speed equal to your walking speed, moving through solid objects and creatures as if they were difficult terrain (taking {@damage 1d10} force damage if you end your turn inside an object).",
-            "Whenever you strike a creature with a weapon attack, you can choose to make the attack roll with disadvantage. If you land the hit despite the disadvantage, you instantly trigger an automatic 7, 8, 9, or 10 (your choice) on the Table of Volatile Entropy."
+            "Whenever you land a weapon attack, you can choose to make the attack roll with disadvantage. If you land the hit despite the disadvantage, you immediately roll on the Table of Volatile Entropy (instead of choosing the result)."
           ]
         },
         "Once you use this feature, you can’t use it again until you finish a long rest."

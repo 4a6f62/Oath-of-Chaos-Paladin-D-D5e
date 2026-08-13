@@ -43,7 +43,6 @@
             column-span: all;
             font-size: 1.05rem;
             margin-bottom: 1.2rem;
-            
         }
 
         /* Styled Drop Cap for the first letter */
@@ -276,13 +275,13 @@
         <div class="side-by-side-grid">
             <div>
                 <h2>Volatile Smite</h2>
-                <p>Starting at 3rd level, whenever you use Divine Smite and roll a 1 on any of your Divine Smite damage dice, the chaotic magic overflows. You immediately roll a d10 on the Table of Volatile Entropy.</p>
+                <p>Starting at 3rd level, whenever you use Divine Smite and roll a 1 on the first Divine Smite damage die, the chaotic magic overflows. You immediately roll a d12 on the Table of Volatile Entropy. You can trigger this feature only once per turn.</p>
 
                 <h2 style="margin-top: 1.2rem !important;">Entropy's Favor</h2>
                 <p>At 3rd level, you manipulate wild probability to gain advantage on one attack roll, ability check, or saving throw. Once you use this feature, you cannot use it again until you finish a short or long rest.</p>
                 <p>Before you regain the use of this feature, you recharge it immediately whenever one of the following occurs:</p>
                 <ul>
-                    <li><strong>Natural Entropy:</strong> You trigger your Volatile Smite feature by rolling a 1 on a Divine Smite damage die.</li>
+                    <li><strong>Natural Entropy:</strong> Immediately after you resolve a roll on the Table of Volatile Entropy triggered by Volatile Smite.</li>
                     <li><strong>DM Impulse:</strong> The DM forces you to roll on the Table of Volatile Entropy immediately after you cast an Oath spell or use Divine Smite.</li>
                 </ul>
             </div>
@@ -306,8 +305,8 @@
                 <table>
                     <thead>
                         <tr>
-                            <th>d10</th>
-                            <th>Effect</th>
+                            <th style="width: 8%;">d12</th>
+                            <th style="width: 92%;">Effect</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -317,10 +316,12 @@
                         <tr><td><strong>4</strong></td><td><strong>Bleeding Rift.</strong> The strike tears a temporary fissure to the Astral Plane. The target is heavily obscured by dimensional fog until the start of your next turn, but any creature that strikes it before then deals an extra 1d6 Force damage.</td></tr>
                         <tr><td><strong>5</strong></td><td><strong>Vampiric Rupture.</strong> Black lightning arcs across the wound. The target takes maximum damage on your Smite dice, and you regain hit points equal to half the Smite damage dealt.</td></tr>
                         <tr><td><strong>6</strong></td><td><strong>Anarchic Surge.</strong> The strike erupts in pure raw force. The target takes double Smite damage and is pushed 20 feet away. Additionally, you instantly regain your reaction if you have already used it this round.</td></tr>
-                        <tr><td><strong>7</strong></td><td><strong>Improbability Shift.</strong> Reality briefly stumbles into absurdity. The target's weapon or spellcasting focus temporarily transforms into a potted plant or small brass towel until the end of its next turn, preventing weapon attacks or spells with material components.</td></tr>
+                        <tr><td><strong>7</strong></td><td><strong>Improbability Shift.</strong> Reality briefly stumbles into absurdity. The target's weapon or spellcasting focus temporarily transforms into a rubber chicken until the end of its next turn — purely cosmetic, no mechanical effect.</td></tr>
                         <tr><td><strong>8</strong></td><td><strong>Perspective Shock.</strong> The strike forces an overwhelming wave of objective cosmic perspective. The target must succeed on a Wisdom saving throw against your spell save DC or be frightened of you and incapacitated by existential dread until the start of your next turn.</td></tr>
                         <tr><td><strong>9</strong></td><td><strong>Babel Scramble.</strong> Pure chaotic noise floods local telepathic channels. All hostile creatures within 15 feet take 1d6 Psychic damage and cannot speak, cast spells with verbal components, or communicate until the end of their next turn.</td></tr>
                         <tr><td><strong>10</strong></td><td><strong>The Ultimate Answer.</strong> Probability converges on absolute certainty. You deal an extra 4 Force damage, and the next attack roll, saving throw, or ability check made by you or an ally within 30 feet within 1 minute automatically succeeds (or counts as a natural 20).</td></tr>
+                        <tr><td><strong>11</strong></td><td><strong>Gravity's Joke.</strong> If you are airborne, you become a Medium whale for 1 round and immediately fall, taking fall damage normally. No effect if you are not airborne.</td></tr>
+                        <tr><td><strong>12</strong></td><td><strong>Static Fizzle.</strong> Nothing happens. The magic just... fizzles.</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -330,7 +331,7 @@
         <div class="side-by-side-grid">
             <div>
                 <h2>Aura of Unbound Chaos</h2>
-                <p>Beginning at 7th level, order cannot exist anywhere near you. You project a 10-foot aura of wild freedom. You and friendly creatures within your aura cannot be restrained or grappled, and moving through difficult terrain costs no extra movement.</p>
+                <p>Beginning at 7th level, you project a 10-foot aura of wild freedom. You and friendly creatures within your aura have advantage on saving throws against being restrained, grappled, or having your speed reduced, and difficult terrain costs you no extra movement.</p>
                 <p>At 18th level, the range of this aura increases to 30 feet.</p>
 
                 <h2 style="margin-top: 1.2rem !important;">Unfettered Shift</h2>
@@ -342,7 +343,7 @@
                 <ul>
                     <li>You are immune to all conditions except unconscious.</li>
                     <li>You gain a flying speed equal to your walking speed, moving through solid objects and creatures as if they were difficult terrain (taking 1d10 force damage if you end your turn inside an object).</li>
-                    <li>Whenever you strike a creature with a weapon attack, you can choose to make the attack roll with disadvantage. If you land the hit despite the disadvantage, you instantly trigger an automatic 7, 8, 9, or 10 (your choice) on the Table of Volatile Entropy.</li>
+                    <li>Whenever you land a weapon attack, you can choose to make the attack roll with disadvantage. If you land the hit despite the disadvantage, you immediately roll on the Table of Volatile Entropy (instead of choosing the result).</li>
                 </ul>
                 <p>Once you use this feature, you can’t use it again until you finish a long rest.</p>
             </div>
