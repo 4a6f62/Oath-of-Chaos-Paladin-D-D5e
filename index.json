@@ -216,9 +216,10 @@
               "{@b Gravity's Joke.} If you are airborne, you become a Large whale until the end of your next turn and immediately fall, taking fall damage normally. No effect if you are not airborne."
             ],
             [
-              "12",
-              "{@b Static Fizzle.} Nothing happens. The magic just... fizzles."
-            ]
+  "12",
+  "{@b Butterfly Effect.} A harmless cloud of glowing, multicolored butterflies erupts from the strike and flutters around you for 1 minute."
+]
+
           ]
         }
       ]
