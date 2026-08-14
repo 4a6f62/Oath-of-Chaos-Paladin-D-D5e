@@ -85,7 +85,8 @@ Starting at 3rd level, whenever you use *Divine Smite* and roll a **1** on the f
 | **9** | **Babel Scramble.** Hostile creatures within 15 feet of the target take 1d6 Psychic damage and must succeed on a Constitution saving throw or be unable to speak or cast spells with verbal components until the end of their next turn. |
 | **10** | **The Ultimate Answer.** Probability converges on absolute certainty. You deal an extra 4 Force damage, and the next attack roll, saving throw, or ability check made by you or an ally within 30 feet within 1 minute gains a +10 bonus. |
 | **11** | **Gravity's Joke.** If you are airborne, you become a Large whale until the end of your next turn and immediately fall, taking fall damage normally. No effect if you are not airborne. |
-| **12** | **Static Fizzle.** Nothing happens. The magic just... fizzles. |
+| **12** | **Butterfly Effect.** A harmless cloud of glowing, multicolored butterflies erupts from the strike and flutters around you for 1 minute. |
+
 
 ---
 
