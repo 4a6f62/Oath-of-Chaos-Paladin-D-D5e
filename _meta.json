@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "sources": [
+      {
+        "json": "OathOfChaos",
+        "abbreviation": "OoC",
+        "full": "Oath of Chaos Paladin",
+        "authors": [
+          "4a6f62"
+        ],
+        "version": "1.0"
+      }
+    ],
+    "dateAdded": 1700000000
+  },
+  "class": [
+    "Oath-of-Chaos.json"
+  ]
+}
