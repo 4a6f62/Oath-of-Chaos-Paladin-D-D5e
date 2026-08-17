@@ -32,7 +32,7 @@ The **Oath of Chaos** is a homebrew Paladin subclass for Dungeons & Dragons 5th 
 
 ## 🛠️ How to Use with 5etools
 
-1. Download or copy the raw contents of [`index.json`](./index.json).
+1. Download or copy the raw contents of [`4a6f62; Oath of Choas.json`](./4a6f62; Oath of Choas.json).
 2. Open **5etools**.
 3. Navigate to **Homebrew Manager** $\rightarrow$ **Import Custom Homebrew**.
 4. Paste the JSON data or upload the file.
